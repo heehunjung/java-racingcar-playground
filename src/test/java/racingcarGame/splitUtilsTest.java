@@ -12,7 +12,7 @@ public class splitUtilsTest {
 
     @Test
     void 입력_쉼표_구분자() {
-        String input = "hhj,hhj2,hhj3";
-        assertThat(SplitNames.splitName(input)).isEqualTo(new String[] { "hhj", "hhj2", "hhj3" });
+        UserInput input = new UserInput("hhj,hhj2,hhj3",5);
+        assertThat(SplitNames.splitName(input.getInput())).isEqualTo(new String[] { "hhj", "hhj2", "hhj3" });
     }
 }

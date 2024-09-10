@@ -21,5 +21,11 @@ public class CarTest {
         }).isInstanceOf(IllegalArgumentException.class);
     }
 
+    @Test
+    void 차_1대_이동(){
+        Car car1 = new Car("hhj12");
+        car1.move(5);
+        assertThat(car1.getLocation()).isEqualTo(1);
+    }
 
 }
