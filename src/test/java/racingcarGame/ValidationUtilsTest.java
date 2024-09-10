@@ -1,8 +1,8 @@
-package racingcarGameTest;
+package racingcarGame;
 
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.Test;
-import racingcarGameTest.utils.Validation;
+import racingcarGame.utils.Validation;
 
 public class ValidationUtilsTest {
 
@@ -12,5 +12,7 @@ public class ValidationUtilsTest {
         Assertions.assertThat(Validation.carNameValidator(name))
                 .isEqualTo(false);
     }
+
+
 
 }

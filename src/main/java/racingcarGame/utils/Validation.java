@@ -1,4 +1,4 @@
-package racingcarGameTest.utils;
+package racingcarGame.utils;
 
 public class Validation {
     public static boolean carNameValidator(String carName) {
