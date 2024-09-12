@@ -13,7 +13,6 @@ public class Race {
     public Race(Cars car) {
         this.cars = car;
     }
-
     public void race() {
         Cars cars = getCars();
         for(Car car: cars.getCars()){
@@ -21,7 +20,6 @@ public class Race {
             car.move(rand);
         }
     }
-
     public Cars winner(int farLocation) {
         Cars cars = getCars();
         List<Car> carsList = new ArrayList<>();
@@ -31,9 +29,6 @@ public class Race {
         }
         return new Cars(carsList);
     }
-
-
-
     public int farLocation() {
         int far = 0;
         for(Car car: cars.getCars()){
@@ -41,7 +36,6 @@ public class Race {
         }
         return far;
     }
-
     private static int compareLocation(int location,Car car){
         return Math.max(car.getLocation(), location);
     }
